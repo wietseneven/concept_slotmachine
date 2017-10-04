@@ -1,0 +1,43 @@
+.Machine {
+  width: 60em;
+  margin: 0 auto;
+  background-color: #ccc;
+  padding: 1em;
+  border-radius: 1em;
+  position: relative;
+}
+
+.Machine h2 {
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 0;
+  margin-left: 1rem;
+}
+
+.Machine__slot {
+  background-color: #fff;
+  border: 0.5em solid #ccc;
+  border-radius: 1em;
+  font-size: 2em;
+  height: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Machine__slot__inner {
+  transition: .2s;
+}
+
+.Machine__group:nth-child(2) .Machine__slot__inner {
+  transition-delay: .25s;
+}
+
+.Machine__group:nth-child(3) .Machine__slot__inner {
+  transition-delay: .5s;
+}
+
+.Machine--going .Machine__slot__inner {
+  filter: blur(0.5em);
+  transition: 0s 0s !important;
+}
