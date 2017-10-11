@@ -63,9 +63,9 @@ class Machine extends Component {
   setFinal() {
     const { subjects, groups, moments, mechanics } = data;
     if (this.goneSubjects.length === subjects.length) this.goneSubjects = [];
-    if (this.goneGroups.length === subjects.length) this.goneGroups = [];
-    if (this.goneMoments.length === subjects.length) this.goneMoments = [];
-    if (this.goneMechanics.length === subjects.length) this.goneMechanics = [];
+    if (this.goneGroups.length === groups.length) this.goneGroups = [];
+    if (this.goneMoments.length === moments.length) this.goneMoments = [];
+    if (this.goneMechanics.length === mechanics.length) this.goneMechanics = [];
 
     this.setState({
       subject: this.getRandomWithManyExclusions(subjects, this.goneSubjects),
