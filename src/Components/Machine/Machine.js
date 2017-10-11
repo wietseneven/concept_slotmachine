@@ -34,7 +34,6 @@ class Machine extends Component {
     this.bellSound1 = new Audio(bellSound);
     this.bellSound2 = new Audio(bellSound);
     this.bellSound3 = new Audio(bellSound);
-    this.bellSound4 = new Audio(bellSound);
   }
 
   componentWillUnmount() {
@@ -136,7 +135,7 @@ class Machine extends Component {
             </div>
           </article>
           <article className="Machine__group">
-            <h2>What moment</h2>
+            <h2>Which moment</h2>
             <div className="Machine__slot">
               <div className="Machine__slot__inner">{moment}</div>
             </div>
