@@ -4,6 +4,10 @@ import Trigger from '../Trigger';
 import data from '../../data.json';
 import './Machine.css';
 
+import music from '../../sounds/slot-music.mp3';
+import winSound from '../../sounds/slot-win.mp3';
+import bellSound from '../../sounds/slot-bell.mp3';
+
 class Machine extends Component {
   constructor() {
     super();
@@ -24,6 +28,13 @@ class Machine extends Component {
 
   componentDidMount() {
     window.addEventListener("keypress", this.handleKeyPress, false);
+
+    this.music = new Audio(music);
+    this.winSound = new Audio(winSound);
+    this.bellSound1 = new Audio(bellSound);
+    this.bellSound2 = new Audio(bellSound);
+    this.bellSound3 = new Audio(bellSound);
+    this.bellSound4 = new Audio(bellSound);
   }
 
   componentWillUnmount() {
@@ -39,17 +50,36 @@ class Machine extends Component {
   create = () => {
     if (this.state.going) return;
     this.setState({ going: true });
+    this.props.onChange(true);
+    this.music.currentTime = 0;
+    this.music.play();
     const amount = 100;
-    const delay = 25;
+    const delay = 50;
     for (let i = 0; i < amount; i += 1) {
       this.randomTimeout = setTimeout(this.generate, delay * i);
     }
     setTimeout(() => {
       clearTimeout(this.randomTimeout);
       this.setFinal();
+      this.props.onChange(false);
       this.setState({ going: false });
+      this.music.pause();
+      this.playWinSounds();
     }, amount * delay);
   };
+
+  playWinSounds() {
+    this.bellSound1.play();
+    setTimeout(() => {
+      this.bellSound2.play();
+    }, 250);
+    setTimeout(() => {
+      this.bellSound3.play();
+    }, 500);
+    setTimeout(() => {
+      this.winSound.play();
+    }, 750);
+  }
 
   generate = () => {
     const { subjects, groups, moments, mechanics } = data;
@@ -123,8 +153,8 @@ class Machine extends Component {
               <div className="Machine__slot__inner">{mechanic}</div>
             </div>
           </article>
-          <button className="Machine__button" onClick={this.create}>GO!</button>
-          <button className="Machine__button" onClick={this.reset}>Reset</button>
+          {/*<button className="Machine__button" onClick={this.create}>GO!</button>*/}
+          {/*<button className="Machine__button" onClick={this.reset}>Reset</button>*/}
         </div>
         <Trigger active={going} onClick={this.create} />
       </section>
