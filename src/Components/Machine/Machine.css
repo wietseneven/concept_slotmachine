@@ -37,6 +37,10 @@
   transition-delay: .5s;
 }
 
+.Machine__group:nth-child(4) .Machine__slot__inner {
+  transition-delay: .75s;
+}
+
 .Machine--going .Machine__slot__inner {
   filter: blur(0.5em);
   transition: 0s 0s !important;

@@ -12,6 +12,7 @@ class Machine extends Component {
       subject: '',
       group: '',
       moment: '',
+      mechanic: '',
       going: false,
     };
   }
@@ -48,7 +49,8 @@ class Machine extends Component {
     const subject = subjects[Math.floor(Math.random() * subjects.length)];
     const group = groups[Math.floor(Math.random() * groups.length)];
     const moment = moments[Math.floor(Math.random() * moments.length)];
-    this.setState({ subject, group, moment });
+    const mechanic = moments[Math.floor(Math.random() * moments.length)];
+    this.setState({ subject, group, moment, mechanic });
   };
 
   reset = () => {
@@ -56,31 +58,38 @@ class Machine extends Component {
       subject: '',
       group: '',
       moment: '',
+      mechanic: '',
       going: false,
     })
   };
 
   render() {
-    const { subject, group, moment, going } = this.state;
+    const { subject, group, moment, mechanic, going } = this.state;
     return (
       <section className={cN("Machine", { "Machine--going": going })}>
         <div className="Machine__inner">
           <article className="Machine__group">
-            <h2>Onderwerp</h2>
-            <div className="Machine__slot">
-              <div className="Machine__slot__inner">{subject}</div>
-            </div>
-          </article>
-          <article className="Machine__group">
-            <h2>Doelgroep</h2>
+            <h2>For who</h2>
             <div className="Machine__slot">
               <div className="Machine__slot__inner">{group}</div>
             </div>
           </article>
           <article className="Machine__group">
-            <h2>Moment van de dag</h2>
+            <h2>What moment</h2>
             <div className="Machine__slot">
               <div className="Machine__slot__inner">{moment}</div>
+            </div>
+          </article>
+          <article className="Machine__group">
+            <h2>About what</h2>
+            <div className="Machine__slot">
+              <div className="Machine__slot__inner">{subject}</div>
+            </div>
+          </article>
+          <article className="Machine__group">
+            <h2>With this mechanic</h2>
+            <div className="Machine__slot">
+              <div className="Machine__slot__inner">{mechanic}</div>
             </div>
           </article>
           <button className="Machine__button" onClick={this.create}>GO!</button>
