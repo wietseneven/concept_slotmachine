@@ -109,7 +109,7 @@ class Machine extends Component {
     while (rand === null || arrayOfIndexesToExclude.includes(rand)) {
       rand = Math.round(Math.random() * (originalArray.length - 1));
     }
-    this.goneSubjects.push(rand);
+    arrayOfIndexesToExclude.push(rand);
     return originalArray[rand];
   }
 
