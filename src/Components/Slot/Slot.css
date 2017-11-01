@@ -1,0 +1,29 @@
+.Slot {
+
+}
+
+.Slot__title {
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 0.1em;
+}
+
+.Slot__wrap {
+  background-color: #fff;
+  border: 0;
+  border-radius: 0.5em;
+  font-size: 2em;
+  height: 3.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Slot__inner {
+  transition: .2s;
+}
+
+.Slot__inner--going {
+  filter: blur(0.5em);
+  transition: 0s 0s !important;
+}

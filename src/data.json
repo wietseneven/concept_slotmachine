@@ -1,53 +1,67 @@
 {
-  "groups": [
-    "Refugee from Syria, 35, feeling bored in the AZC of Breda",
-    "Deaf student, 21, studying law, Rotterdam",
-    "Your grandma, ready for a new hobby",
-    "Graduated art student, 24,  selling her/his first commercial piece in a local art gallery",
-    "Teacher at Avans, 40, slightly on the edge of a burnout",
-    "Cashier at your local supermarket, 16, crazy about chewing gum and youtube",
-    "Police officer, 55, single and semi-pro fishing afficionado",
-    "Teenager, 13, 1st year at highschool, Pokémon Go guru",
-    "Deliveroo delivery dude, 19, \"work hard play hard\" mentality",
-    "CMD designer, 2nd year, interested in interactive storytelling"
-  ],
-  "moments": [
-    "Waiting for your dentist appointment",
-    "In the train to school",
-    "In a traffice jam to work",
-    "During breakfast on sunday",
-    "In line for the checkout at Albert Heijn",
-    "Waiting for your flight at Schiphol airport",
-    "On a terrace on a saturday afternoon",
-    "During lunchbreak at school",
-    "Waking up",
-    "On the toilet",
-    "Friday afternoon at work around 16:00",
-    "On the couch in front of the TV",
-    "Relaxing in the bathtub"
-  ],
-  "subjects": [
-    "Putin's fishing holiday",
-    "Your first Tinder date",
-    "When quinoa gives you superpowers",
-    "Shakespear's most creative swear words",
-    "The perfect broccoli smoothie & other recipes",
-    "Survival tips for a confusing day about research in the wild",
-    "The ultimate guide to the 2017 cat gifs collection ",
-    "Do we live in the Matrix reality?",
-    "The friendship of a racoon and a bear",
-    "The secret body parts of Frankenstein"
-  ],
-  "mechanics": [
-    "Quiz structure",
-    "Choose your own adventure",
-    "Vertical scrollytelling ",
-    "Chatbot story",
-    "Horizontal storytelling",
-    "Timeline",
-    "Personalized story",
-    "Data vizualisation",
-    "Platformer game",
-    "3D / spatial story"
+  "abc": [
+    {
+      "title": "For who",
+      "items": [
+        "Refugee from Syria, 35, feeling bored in the AZC of Breda",
+        "Deaf student, 21, studying law, Rotterdam",
+        "Your grandma, ready for a new hobby",
+        "Graduated art student, 24,  selling her/his first commercial piece in a local art gallery",
+        "Teacher at Avans, 40, slightly on the edge of a burnout",
+        "Cashier at your local supermarket, 16, crazy about chewing gum and youtube",
+        "Police officer, 55, single and semi-pro fishing afficionado",
+        "Teenager, 13, 1st year at highschool, Pokémon Go guru",
+        "Deliveroo delivery dude, 19, \"work hard play hard\" mentality",
+        "CMD designer, 2nd year, interested in interactive storytelling"
+      ]
+    },
+    {
+      "title": "Which moment",
+      "items": [
+        "Waiting for your dentist appointment",
+        "In the train to school",
+        "In a traffice jam to work",
+        "During breakfast on sunday",
+        "In line for the checkout at Albert Heijn",
+        "Waiting for your flight at Schiphol airport",
+        "On a terrace on a saturday afternoon",
+        "During lunchbreak at school",
+        "Waking up",
+        "On the toilet",
+        "Friday afternoon at work around 16:00",
+        "On the couch in front of the TV",
+        "Relaxing in the bathtub"
+      ]
+    },
+    {
+      "title": "About what",
+      "items": [
+        "Putin's fishing holiday",
+        "Your first Tinder date",
+        "When quinoa gives you superpowers",
+        "Shakespear's most creative swear words",
+        "The perfect broccoli smoothie & other recipes",
+        "Survival tips for a confusing day about research in the wild",
+        "The ultimate guide to the 2017 cat gifs collection ",
+        "Do we live in the Matrix reality?",
+        "The friendship of a racoon and a bear",
+        "The secret body parts of Frankenstein"
+      ]
+    },
+    {
+      "title": "With this mechanic",
+      "items": [
+        "Quiz structure",
+        "Choose your own adventure",
+        "Vertical scrollytelling ",
+        "Chatbot story",
+        "Horizontal storytelling",
+        "Timeline",
+        "Personalized story",
+        "Data vizualisation",
+        "Platformer game",
+        "3D / spatial story"
+      ]
+    }
   ]
 }

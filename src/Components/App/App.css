@@ -20,6 +20,20 @@
   font-size: large;
 }
 
+.App__logo {
+  width: 15em;
+  height: auto;
+  position: absolute;
+  bottom: 2em;
+  left: 2em;
+}
+
+.App--going .App__logo {
+  left: 100vw;
+  bottom: 100vh;
+  transition: 1.25s;
+}
+
 @keyframes example {
   0% {
     background-color: #ffec00;
