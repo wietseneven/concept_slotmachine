@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import cN from 'classnames';
+import data from '../../data.json';
 import logo from './logo.svg';
 import './App.css';
 
@@ -9,8 +10,15 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      going: false
+      going: false,
+      data: {},
     }
+  }
+
+  componentDidMount() {
+    const id = this.props.match.params.generatorId;
+    const itemData = (data[id]) ? data[id] : { title: "Not found", slots: [{"title": "Found?", "items": ["Not found", "Doesn't exist", "Next time better."]}] };
+    this.setState({ data: itemData });
   }
 
   handleChange = going => {
@@ -21,11 +29,11 @@ class App extends Component {
 
   render() {
     return (
-      <div className={cN("App", {"App--going": this.state.going})}>
+      <div className={cN("App", { "App--going": this.state.going })}>
         <header className="App-header">
-          <h1 className="App-title">CONCEPTGENERATOR 1.0</h1>
+          <h1 className="App-title">{this.state.data.title}</h1>
         </header>
-        <Machine onChange={this.handleChange} />
+        <Machine data={this.state.data} onChange={this.handleChange} />
         <img src={logo} alt="logo" className="App__logo" />
       </div>
     );

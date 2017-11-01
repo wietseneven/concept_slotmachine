@@ -5,4 +5,5 @@
   padding: 1.5em;
   border-radius: 1em;
   position: relative;
+  min-height: 18em;
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import cN from 'classnames';
+
 import './Trigger.css';
 
 class Trigger extends Component {
