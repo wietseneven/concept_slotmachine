@@ -3,6 +3,11 @@ import cN from 'classnames';
 import music from '../../sounds/slot-music.mp3';
 import winSound from '../../sounds/slot-win.mp3';
 import bellSound from '../../sounds/slot-bell.mp3';
+
+import cow from '../../sounds/cow.mp3';
+import lion from '../../sounds/lion.mp3';
+import rooster from '../../sounds/rooster.mp3';
+
 import './Slot.css';
 
 class Slot extends Component {
@@ -26,6 +31,9 @@ class Slot extends Component {
     this.music = new Audio(music);
     this.bellSound = new Audio(bellSound);
     this.winSound = new Audio(winSound);
+
+    this.winSounds = [new Audio(winSound), new Audio(cow), new Audio(lion), new Audio(rooster)];
+
     this.gone = [];
   }
 
@@ -59,7 +67,8 @@ class Slot extends Component {
   playSound = () => {
     const { isLast } = this.props;
     if (isLast) {
-      this.winSound.play();
+      const sound = this.winSounds[Math.floor(Math.random() * this.winSounds.length)];
+      sound.play();
     } else {
       this.bellSound.play()
     }
