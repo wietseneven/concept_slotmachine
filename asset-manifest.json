@@ -1,9 +1,12 @@
 {
   "main.css": "static/css/main.4b0229cd.css",
   "main.css.map": "static/css/main.4b0229cd.css.map",
-  "main.js": "static/js/main.e4784fbc.js",
-  "main.js.map": "static/js/main.e4784fbc.js.map",
+  "main.js": "static/js/main.ff45af95.js",
+  "main.js.map": "static/js/main.ff45af95.js.map",
+  "static/media/cow.mp3": "static/media/cow.2a71f7f4.mp3",
+  "static/media/lion.mp3": "static/media/lion.b906d4a0.mp3",
   "static/media/logo.svg": "static/media/logo.0122ece2.svg",
+  "static/media/rooster.mp3": "static/media/rooster.0ce169db.mp3",
   "static/media/slot-bell.mp3": "static/media/slot-bell.ddef094e.mp3",
   "static/media/slot-music.mp3": "static/media/slot-music.488492b0.mp3",
   "static/media/slot-win.mp3": "static/media/slot-win.40f3b4df.mp3"
