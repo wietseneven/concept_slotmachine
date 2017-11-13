@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+  height: 100%;
+}
+
+.Create {
+
+}
+
+.Create__field {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 30rem;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.Create__field input {
+  padding: 0.5rem;
+  width: 100%;
+}
