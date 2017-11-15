@@ -119,5 +119,21 @@
         ]
       }
     ]
+  },
+  "roc-teams": {
+    "title": "ROC Team generator",
+    "type": "combiner",
+    "size": 3,
+    "items": [
+      "Eva",
+      "Luuk",
+      "Nisse",
+      "Sharona",
+      "Dennis",
+      "Cas",
+      "Quin",
+      "Borys",
+      "Pim"
+    ]
   }
 }
