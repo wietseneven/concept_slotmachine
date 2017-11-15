@@ -5,8 +5,10 @@ import winSound from '../../sounds/slot-win.mp3';
 import bellSound from '../../sounds/slot-bell.mp3';
 
 import cow from '../../sounds/cow.mp3';
+import pig from '../../sounds/pig.mp3';
 import lion from '../../sounds/lion.mp3';
 import rooster from '../../sounds/rooster.mp3';
+import elephant from '../../sounds/elephant.mp3';
 
 import './Slot.css';
 
@@ -30,9 +32,8 @@ class Slot extends Component {
 
     this.music = new Audio(music);
     this.bellSound = new Audio(bellSound);
-    this.winSound = new Audio(winSound);
 
-    this.winSounds = [new Audio(winSound), new Audio(cow), new Audio(lion), new Audio(rooster)];
+    this.winSounds = [new Audio(winSound), new Audio(cow), new Audio(pig), new Audio(lion), new Audio(rooster), new Audio(elephant)];
 
     this.gone = [];
   }
