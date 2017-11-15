@@ -123,7 +123,8 @@
   "roc-teams": {
     "title": "ROC Team generator",
     "type": "combiner",
-    "size": 3,
+    "chunks": 3,
+    "chunkTitle": "Member",
     "items": [
       "Eva",
       "Luuk",

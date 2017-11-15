@@ -36,12 +36,12 @@ class App extends Component {
       // first put all the items in a random order
       App.shuffleArray(itemData.items);
 
-      let i, j, k = 0, temparray, chunk = (itemData.items.length / itemData.size);
+      let i, j, k = 0, temparray, chunk = (itemData.items.length / itemData.chunks);
       for (i = 0, j = itemData.items.length; i < j; i += chunk) {
         k += 1;
         temparray = itemData.items.slice(i, i + chunk);
         slots.push({
-          title: `Member ${k}`,
+          title: `${itemData.chunkTitle} ${k}`,
           items: temparray
         })
       }
