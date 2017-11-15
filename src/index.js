@@ -5,10 +5,10 @@ import App from './Components/App';
 import Create from './Components/Create';
 import registerServiceWorker from './registerServiceWorker';
 
-import { BrowserRouter, Route, Redirect } from 'react-router-dom';
+import { HashRouter, Route, Redirect } from 'react-router-dom';
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
     <div>
       <Route path={`/g/:generatorId`}
              render={(props) => <App {...props} />} />
@@ -18,6 +18,6 @@ ReactDOM.render(
              exact
              render={(props) => <Redirect to={'/g/concepts'}/>} />
     </div>
-  </BrowserRouter>
+  </HashRouter>
 , document.getElementById('root'));
 registerServiceWorker();
