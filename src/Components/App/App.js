@@ -41,7 +41,7 @@ class App extends Component {
         k += 1;
         temparray = itemData.items.slice(i, i + chunk);
         slots.push({
-          title: `Lid ${k}`,
+          title: `Member ${k}`,
           items: temparray
         })
       }
