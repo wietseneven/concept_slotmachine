@@ -59,7 +59,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className={cN("App", { "App--going": this.state.going })}>
+      <div className={cN("App", { "App--going": this.state.going })} style={{backgroundColor: this.state.data.backgroundColor}}>
         <header className="App-header">
           <h1 className="App-title">{this.state.data.title}</h1>
         </header>

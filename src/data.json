@@ -123,6 +123,7 @@
   "roc-teams": {
     "title": "ROC Team generator",
     "type": "combiner",
+    "backgroundColor": "#F58220",
     "chunks": 3,
     "chunkTitle": "Member",
     "items": [
