@@ -137,5 +137,39 @@
       "Borys",
       "Pim"
     ]
+  },
+  "leerwerkgroep": {
+    "title": "Leerwerkgroepie",
+    "slots": [
+      {
+        "title": "Wie?",
+        "items": [
+          "Rogier",
+          "Janice",
+          "Thijs",
+          "Marin",
+          "Rick",
+          "Linda",
+          "Jodie",
+          "Annemarie",
+          "Ilona"
+        ]
+      },
+      {
+        "title": "Over?",
+        "items": [
+          "Vrije invulling",
+          "Wietse's houding",
+          "Wietse's duidelijkheid in spreken",
+          "Wietse's invulling van een sleutelbegrip",
+          "Wietse's slechtste moment",
+          "Wietse's beste moment",
+          "Een top in 5 woorden",
+          "Een tip in 5 woorden",
+          "Een leuk verhaaltje",
+          "Vraag of Wietse pepernoten heeft om te delen"
+        ]
+      }
+    ]
   }
 }
