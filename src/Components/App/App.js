@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import cN from 'classnames';
-import data from '../../data.json';
 import logo from './logo.svg';
 import './App.css';
 
@@ -25,10 +24,22 @@ class App extends Component {
   }
 
   componentDidMount() {
-    const id = this.props.match.params.generatorId;
+    this.setSlots(this.props);
+  }
+
+  componentWillReceiveProps(newProps) {
+    if (this.props !== newProps) {
+      this.setSlots(newProps);
+    }
+  }
+
+  setSlots(props) {
+    const { match, data } = props;
+    const id = match.params.generatorId;
     const itemData = (data[id]) ? data[id] : {
       title: "Not found",
-      slots: [{ "title": "Found?", "items": ["Not found", "Doesn't exist", "Next time better."] }]
+      slots: [{ "title": "Found?", "items": ["Not found", "Doesn't exist", "Next time better."] }],
+      cols: false
     };
 
     if (itemData.type === "combiner") {
@@ -59,11 +70,12 @@ class App extends Component {
 
   render() {
     return (
-      <div className={cN("App", { "App--going": this.state.going })} style={{backgroundColor: this.state.data.backgroundColor}}>
+      <div className={cN("App", { "App--going": this.state.going })}
+           style={{ backgroundColor: this.state.data.backgroundColor }}>
         <header className="App-header">
           <h1 className="App-title">{this.state.data.title}</h1>
         </header>
-        <Machine data={this.state.data} onChange={this.handleChange} />
+        <Machine data={this.state.data} cols={this.state.data.cols} onChange={this.handleChange} />
         <img src={logo} alt="logo" className="App__logo" />
       </div>
     );

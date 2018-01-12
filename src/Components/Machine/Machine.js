@@ -61,10 +61,12 @@ class Machine extends Component {
 
   render() {
     const { going } = this.state;
+    const { cols } = this.props;
+
     const slots = this.getSlots();
     return (
       <section className={cN("Machine", { "Machine--going": going })}>
-        <div className="Machine__inner">
+        <div className={cN("Machine__inner", { "Machine--cols": cols })}>
           {slots}
         </div>
         <Trigger active={going} onClick={this.create} />

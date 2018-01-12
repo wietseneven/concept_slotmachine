@@ -138,6 +138,25 @@
       "Pim"
     ]
   },
+  "roc-order": {
+    "title": "ROC Presentatie volgorde",
+    "type": "combiner",
+    "cols": true,
+    "backgroundColor": "#F58220",
+    "chunks": 9,
+    "chunkTitle": "",
+    "items": [
+      "Eva",
+      "Luuk",
+      "Nisse",
+      "Sharona",
+      "Dennis",
+      "Cas",
+      "Quin",
+      "Borys",
+      "Pim"
+    ]
+  },
   "leerwerkgroep": {
     "title": "Leerwerkgroepie",
     "slots": [

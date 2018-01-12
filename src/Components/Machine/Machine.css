@@ -7,3 +7,9 @@
   position: relative;
   min-height: 18em;
 }
+
+.Machine--cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1em;
+}
